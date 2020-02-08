@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>PD Academy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+#photo_grid img {
+  width: 80%;
+  height: 230px;
+}
+</style>
+<head>
+  <title>EVENT POPUP</title>
+  <script language="javascript">
+   window.open("project_popup.html", "event", "width=400, height=300, left=100, top=50");
+  </script>
+</head>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>PD<br>Academy</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Academy facility</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">about PD Academy</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teachers</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Request for consultation</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>PD Academy</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Language study abroad :D</b></h1>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Details facility</b></h1>
+    <hr style="width:50px;border:5px solid rgb(11, 131, 47)" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div id = "photo_grid" class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://img.freepik.com/free-photo/female-teacher-leaning-schoolgirl_23-2147659030.jpg?size=626&ext=jpg" onclick="onClick(this)" alt="Free personal counseling with 1: 1 teacher assignment">
+      <img src="https://img.freepik.com/free-photo/top-view-students-coworking_23-2147666708.jpg?size=626&ext=jpg" onclick="onClick(this)" alt="Small group activities, group study groups">
+      <img src="https://img.freepik.com/free-photo/learning-concept-close-up-student-using-laptop-alibrary_1150-16609.jpg?size=626&ext=jpg" onclick="onClick(this)" alt="Providing personal electronic devices during the language course">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://image.freepik.com/free-photo/female-tourists-hand-have-happy-travel-map_1150-7411.jpg" onclick="onClick(this)" alt="Free travel for one month after the training period">
+      <img src="https://image.freepik.com/free-photo/gym-interior-with-equipments_23-2147949749.jpg" onclick="onClick(this)" alt="Health facilities for students' health at each language school">
+      <img src="https://image.freepik.com/free-photo/friends-having-fun-falling-confetti_23-2147651884.jpg" onclick="onClick(this)" alt="Party with foreign students quarterly">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- 어학원 소개 -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Introduce Academy.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(11, 131, 47)" class="w3-round">
+    <img src="https://image.freepik.com/free-photo/portrait-positive-confident-businessman_1262-17122.jpg" style="width:35%" alt="" align="right">
+    <h3>With <b>PD Academy</b>, you gain confidence in English. Believe and join us!</h3>
+    <p>
+      These days, the English teaching method is floating, the educational policy is changing. There is always a lot of talk about English education.
+      But we have not walked but have walked the road. <br>
+      I've been thinking a long time about how to learn English naturally as I learned Korean.<br>
+      As a result, I adopted a learning method using English fairy tales, thinking that watching, listening, and reading in English would be English.
+      All the stories have been animated. In addition, we release new fairy tales every day so that children can see as many stories as possible.<br>
+      As I quietly walked this path, the world began to acknowledge it.
+      But Little Fox will not be satisfied here.
+      For the day when all the children are learning English happily, we will continue our path one more day.
+    </p>
+  </div>
+  
+  <!-- 강사진 소개 -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Teachers.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(11, 131, 47)" class="w3-round">
+    <p style="font-size: 25px;">The very best experiences we offer.</p>
+    <p>From the foundation of PD Academy, we always have offered lectures of our best. <br>
+      "Our goal is to offer best experiences of lectures to our students. Our very pride is that we have never failed at it. We value every stuents and their history, character, achivement and ability. We have various plans to cover every wants from evry students." <br> 
+      Said Harvy Specter, original founder of PD Academy. <br>
+      Main factor of our previous achivements is obviously our hard-working lecturers. <br>
+      All lecturers are chosen and interviewed thoroughly. We proudly present our lecturers below. <br>
+    </p>
+    <p><b>Our lecturers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn.pixabay.com/photo/2016/03/02/10/32/allrounder-1232059_1280.jpg" alt="John" style="width:100%; height:350px;">
+        <div class="w3-container">
+          <h3>Harvy Specter</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p> "What our students achive is what we achive."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn.pixabay.com/photo/2016/10/09/18/03/smile-1726471_960_720.jpg" alt="Jane" style="width:100%; max-height: 350px;">
+        <div class="w3-container">
+          <h3>Michael Ross</h3>
+          <p class="w3-opacity">Lecturer</p>
+          <p>"I care most about what my students want and think."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn.pixabay.com/photo/2015/07/31/00/26/woman-868522_960_720.jpg" alt="Mike" style="width:100%; max-height: 350px">
+        <div class="w3-container">
+          <h3>Rachel Jane</h3>
+          <p class="w3-opacity">Lecturer</p>
+          <p>"Get confident with me on my lectures. "</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 패키지 소개 -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(11, 131, 47)" class="w3-round">
+    <p>We have three price plans - Basic, Intermediate, Pro. <br>
+      Each plans are covering their options to meet your circumstances. <br>
+      If you want to culsult over price plans, you may have our contact by filling out form in CONTACT section.
+    </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Personal Mentor Assign</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Textbook costs charged</li>
+        <li class="w3-padding-16">20% discount <br>(over 3 month contact)</li>
+        <li class="w3-padding-16">None</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black" onclick="collectemail()">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-deep-orange w3-xlarge w3-padding-32">Intermediate</li>
+        <li class="w3-padding-16">Personal Mentor Assign</li>
+        <li class="w3-padding-16">25 hours support</li>
+        <li class="w3-padding-16">Free textbooks</li>
+        <li class="w3-padding-16">25% discount<br>(over 3 month contact)</li>
+        <li class="w3-padding-16">None</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black" onclick="collectemail()">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Personal Mentor Assign</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Free textbooks</li>
+        <li class="w3-padding-16">50% discount<br>(over 3 month contact)</li>
+        <li class="w3-padding-16">Chance for oversea seminar</li>
+        <li class="w3-padding-16">
+          <h2>$ 359</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black" onclick="collectemail()">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- 상담 신청 -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid #0b832f" class="w3-round">
+    <p>Would you like to join our PD Academy? Get more information from an agent!! :) </p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Student Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom" onclick="alert('Application completed!! \nAn agent will contact you in three days :) Thank U')">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function collectemail() {
+  let useremail = prompt('Please put your e-mail address here.')
+  alert('Completed.')
+} 
+
+</script>
+
+
+</body>
+</html>

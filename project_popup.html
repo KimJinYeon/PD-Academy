@@ -1,0 +1,43 @@
+<html>
+    <head>
+      <title>EVENT POPUP</title>
+    </head>
+    <style>
+        .blinking{
+	        -webkit-animation:blink 0.35s ease-in-out infinite alternate;
+            -moz-animation:blink 0.35s ease-in-out infinite alternate;
+            animation:blink 0.35s ease-in-out infinite alternate;
+        }
+        @-webkit-keyframes blink{
+                0% {opacity:0;}
+                100% {opacity:1;}
+        }
+        @-moz-keyframes blink{
+                0% {opacity:0;}
+                100% {opacity:1;}
+        }
+        @keyframes blink{
+                0% {opacity:0;}
+                100% {opacity:1;}
+        }
+    </style>
+
+    <body onload="window.resizeTo(500,400)" style="background-image: url(https://img.freepik.com/free-photo/rear-view-audience-conference-hall-seminar-meeting_41418-2958.jpg?size=626&ext=jpg);">
+    <br><hr>
+    <h1 style="font-style: oblique; font-size: 35px; text-align: center; color: yellow; text-shadow:-2px 0 #000000,0 2px #000000,2px 0 #000000,0 -2px #000000;"> PD Academy _ EVENT !!</h1>
+    <hr>
+    <h3 style="color: whitesmoke;">For the new semester, we prepared an event at our academy. Incredible discounts are only available this month !!!! </h3>
+    <h2 class="image blinking" style="text-align: center; color: red; text-shadow:-2px 0 #f5f5f5,0 2px #f5f5f5,2px 0 #f5f5f5,0 -2px #f5f5f5;"><strong>$400 -> $359</strong></h2>
+    <input type="button" value="close" onclick="self.close()"/>
+    <input type="button" value="move event" onclick="moveClose();"/>
+    <script language="JaVaScript">
+
+    function moveClose() {
+        opener.location.href="project.html#packages";
+        self.close();
+    }
+
+    </script>
+    
+    </body>
+    </html>
